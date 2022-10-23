@@ -37,7 +37,7 @@ export default function Navbar(props) {
           <NavLink className="nav-link" aria-current="page" to="/contact">Contact</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" aria-current="page" onClick={props.login}>
+          <NavLink className="nav-link" aria-current="page"  onClick={props.login}>
            {props.status ? "Logout":"Login"}
           </NavLink>
         </li>
