@@ -1,10 +1,9 @@
 import { set } from 'mongoose';
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import {v4 as uuidv4} from "uuid"
 import './Exam_Section.css'
-
 export default function Exam_Section() {
- 
+  
   const QuestionList=[
     {
        question:"Which of the following is used to read an HTML page and render it?",

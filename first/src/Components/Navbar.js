@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route, useNavigate} from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import Contact from './Contact'
 import Exam_Section from './Exam_Section'
+import Login from './Login'
 import Student_Section from './Student_Section'
 import Teacher_Section from './Teacher_Section'
 
 
-export default function Navbar() {
- 
-   const loginhandler=()=>{
-    alert()
-  }
-  
+export default function Navbar(props) {
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -40,22 +37,17 @@ export default function Navbar() {
           <NavLink className="nav-link" aria-current="page" to="/contact">Contact</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink onClick={loginhandler}>Login</NavLink>
+          <NavLink className="nav-link" aria-current="page" onClick={props.login}>
+           {props.status ? "Logout":"Login"}
+          </NavLink>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
- <Routes>
-         
-          <Route path='/students' element={<Student_Section/>}></Route>
-          <Route path='/teachers' element={<Teacher_Section/>}></Route>
-          <Route path='/examsection' element={<Exam_Section/>}></Route>
-          <Route path='/contact' element={<Contact/>}></Route>
 
-  
-  </Routes>
+ 
     </>
   )
 }
