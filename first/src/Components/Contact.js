@@ -2,6 +2,10 @@ import React from 'react'
 import './Contact.css'
 
 export default function Contact() {
+
+  const submit=()=>{
+    alert("Thank You")
+  }
   return (
     <>
       <div className="contactform">
@@ -18,7 +22,7 @@ export default function Contact() {
           <label htmlFor="" id='first'>Questions or Queries</label><br />
           <textarea name="" id='second' cols="20" rows="2" required></textarea>
 
-          <button type='submit' id='submit'>Submit</button>
+          <button type='submit' id='submit' onClick={submit}>Submit</button>
       </div>
     </>
   )
