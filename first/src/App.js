@@ -29,7 +29,7 @@ import Contact from './Components/Contact'
            
             <Route path='/students' element={<Student_Section/>}></Route>
             <Route path='/teachers' element={<Teacher_Section/>}></Route>
-            <Route path='/examsection' element={this.state.auth ? <Navigate to="/students"/>:<Exam_Section/>}>
+            <Route path='/examsection' element={this.state.auth ===0 ? <Navigate to="/login"/>:<Exam_Section/>}>
             </Route>
             <Route path='/contact' element={<Contact/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
