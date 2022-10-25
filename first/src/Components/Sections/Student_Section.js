@@ -12,14 +12,14 @@ export default function Student_Section() {
    
   return (
     <>
-       <div class="row">
+       <div>
   <div class="col">
   <div class="text-center">
   <img src='/Sample.png' class="rounded" width="900px"/>
 </div>
   </div>
   <div class="w-100"></div>
-  <div class="col">
+  <div>
   <div className="learnerform">
     <form>
     <h2 id='header'>Learners Form</h2><br />
