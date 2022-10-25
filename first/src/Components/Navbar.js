@@ -19,7 +19,7 @@ export default function Navbar(props) {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+      <ul className="navbar-nav ms-auto">
         <li className="nav-item">
           <NavLink className="nav-link" to="/home">Home</NavLink>
         </li>
@@ -36,7 +36,7 @@ export default function Navbar(props) {
         <li className="nav-item">
           <NavLink className="nav-link" aria-current="page" to="/contact">Contact</NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item ">
           <NavLink className="nav-link" aria-current="page"  onClick={props.login}>
            {props.status ? "Logout":"Login"}
           </NavLink>
@@ -45,6 +45,7 @@ export default function Navbar(props) {
     </div>
   </div>
 </nav>
+
 
 
  

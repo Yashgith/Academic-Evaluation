@@ -7,6 +7,8 @@ import Student_Section from './Components/Student_Section'
 import Teacher_Section from './Components/Teacher_Section'
 import Exam_Section from './Components/Exam_Section'
 import Contact from './Components/Contact'
+
+
  class App extends Component{ 
   constructor(props) {
     super(props)
